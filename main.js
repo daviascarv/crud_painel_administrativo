@@ -1,5 +1,7 @@
-const app = require("express")
-const express = express()
+const express = require("express")
+const app = express()
+app.set('view engine', 'ejs')
+app.request(express.static('public'))
 
 app.get("/", (req, res)=>{
     res.render("index")
