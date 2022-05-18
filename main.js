@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 
 connection
         .authenticate()
-        .then(()=>{
+        .then(() => {
             console.log("Conexão com o Banco de Dados feita com sucesso!!")
         }).catch((error)=>{
             console.log(error)
