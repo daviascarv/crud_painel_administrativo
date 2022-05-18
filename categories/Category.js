@@ -2,7 +2,7 @@ const Sequelize = require("sequelize")
 const connection =  require("../database/database")
 
 const Category = connection.define('categories', {
-    titulo:{
+    title:{
         type: Sequelize.STRING,
         allowNull: false
     },slug:{
@@ -10,7 +10,6 @@ const Category = connection.define('categories', {
         allowNull: false
     }
 })
-
 
 
 module.exports = Category
