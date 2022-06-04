@@ -3,7 +3,7 @@ const connection =  require("../database/database")
 const Category = require("../categories/Category")
 
 const Article = connection.define('article', {
-    titulo:{
+    title:{
         type: Sequelize.STRING,
         allowNull: false
     },slug:{
